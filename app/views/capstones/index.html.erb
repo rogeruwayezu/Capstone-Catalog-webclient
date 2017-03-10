@@ -1,1 +1,24 @@
-<h1>Just a trial</h1>
+<div class="container">
+
+
+<div class="row">
+   <% if current_user && current_user.admin %>
+     <%= link_to "Add Product", "/products/new" %>
+   <% end %>
+  <% @capstones.each_slice(3) do |three_capstones| %>
+    <div class="row">
+        <% three_capstones.each do |capstone| %>
+          <div class="col-md-4">
+            <div class="thumbnail">
+            <h2>First Name: <%= link_to capstone.student["first_name"] "/students/#{student.id}" %></h2>
+            <h2>Last Name: <%= link_to capstone.student["last_name"] "/students/#{student.id}" %></h2>
+            <h2>Capstone Name: <%= capstone["name"] %></h2>
+            <img src="<%= capstone["screenshots"]%>" class="img-responsive" >
+            </div>
+          </div>
+        <% end %>
+    </div>
+  <% end %>
+</div>
+</div>
+
