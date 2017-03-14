@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
   <% @capstones.each do |capstone| %>
     <h1><a href="/capstones/<%= capstone['id'] %>"><%= capstone['student']['first_name'] %> <%= capstone['student']['last_name'] %> </a></h1>
@@ -5,3 +6,4 @@
     <img src="<%= capstone['screenshot'] %>">
   <% end %>
 </div>
+
