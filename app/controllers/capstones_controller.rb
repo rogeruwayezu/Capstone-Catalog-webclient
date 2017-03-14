@@ -8,5 +8,4 @@ class CapstonesController < ApplicationController
     @capstone = Unirest.get("http://localhost:3000/capstones/#{params['id'].to_i}.json", headers:{"Accept"=>"application/json"}).body
     render :show
   end
-  
 end
