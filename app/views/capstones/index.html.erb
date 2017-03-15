@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% @students.each do |student| %>
   <%=student["first_name"] %>
   <%= student["last_name"]%>
@@ -7,3 +8,14 @@
   <%end %>
 <% end %>
 
+=======
+<div class="container-fluid">
+  <% @capstones.each do |capstone| %>
+    <h1><a href="/capstones/<%= capstone['id'] %>"><%= capstone['student']['first_name'] %> <%= capstone['student']['last_name'] %> </a></h1>
+    <h3><%= capstone['name'] %></h3>
+    <img src="<%= capstone['screenshot'] %>">
+  <% end %>
+</div>
+
+
+>>>>>>> 9637d4c831de6c0ee056df4a0b7b6913216580e5
