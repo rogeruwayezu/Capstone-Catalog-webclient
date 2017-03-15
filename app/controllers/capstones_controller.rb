@@ -1,6 +1,7 @@
 class CapstonesController < ApplicationController
 
   def index
+    
      @capstones = Unirest.get("#{ENV['DOMAIN']}/capstones.json", headers:{"Accept"=>"application/json"}).body
    end
 
