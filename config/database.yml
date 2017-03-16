@@ -22,7 +22,7 @@ test:
 
 production:
   <<: *default
-  database: Capstone-Catalog-webclient 
+  database: Capstone-Catalog-webclient- production
   adapter: postgresql 
   encoding: unicode 
   pool: 5 
